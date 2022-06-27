@@ -6,15 +6,17 @@ Daniel
 Data collection sker om regel igennem en sampler, hvor man får et discrete signal, som man kan bruge en interpolator på for at reconstruct signalet. 
 
 ## Sampling
-    - Sampling interval er den tid det tager mellem to samples
-    - Sampling frequency / sampling rate er det gennemsnitlige antal af samlings man får hvert sekund
+    
+  - Sampling interval er den tid det tager mellem to samples
+  - Sampling frequency / sampling rate er det gennemsnitlige antal af samlings man får hvert sekund
 
 ## Sample and Hold Method
-    - Flush, Drain the charge og the cpacitor by connecting it to ground
-    - Wait, Make sure that input is not connected to ground
-    - Sample Connect the capacitor to the input. This will charge the capacitor over time
-    - Hold, Given a large enough sample time the capacitor is charge to a voltage matching the input
-    - Compare, This charge can then be compared to multiple known values, once for each output bit
+    
+  - Flush, Drain the charge og the cpacitor by connecting it to ground
+  - Wait, Make sure that input is not connected to ground
+  - Sample Connect the capacitor to the input. This will charge the capacitor over time
+  - Hold, Given a large enough sample time the capacitor is charge to a voltage matching the input
+  - Compare, This charge can then be compared to multiple known values, once for each output bit
 
 - Compare step
     - Der sammenlignes én gang pr. bit
