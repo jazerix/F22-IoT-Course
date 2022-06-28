@@ -105,7 +105,7 @@ Documenting these are key in order to reproduce results.
 
 ### Factors
 
-Most of these parameters are static, but sometimes we wan't to tune some of the parameters. Thereby making it a _factor_ and experiment determining the best value.
+Most of these parameters are static, but sometimes we want to tune some of the parameters. Thereby making it a _factor_ and experiment determining the best value.
 
 Some factors may also have complex interactions with each other and examining all the combinations can be computially exhaustive.
 

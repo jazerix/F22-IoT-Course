@@ -1,4 +1,4 @@
-# Performance & evaluation
+# Budget management
 
 **Definition**: A budget represents the availability of a scarce resource
 
@@ -10,7 +10,7 @@
 
 Restrictions include:
 
-- Number of pakcets sent throughout a day
+- Number of packets sent throughout a day
   - Especially the case for Sigfox radios'
   - Consideration for LoRa
 - Rate of transmission
@@ -32,7 +32,7 @@ Consumers of packets:
 - Available size of Flash (fx a chip on the device, store locks)
 - Amount of write cycles
 - Size of erase unit (need to look this up)
-    - Sometimes you can't just erase just one bit, but instead maybe 64 bytes. The result means that you have to load the data into memory you want to load data into ram (64 bytes), delete the bit within the data and replace it.
+    - Sometimes you can't just erase just one bit, but instead maybe 256 bits. The result means that you have to load the data into memory you want to load data into ram (256 bits), delete the bit within the data and replace it.
 
 ROM and Flash have to be written to in a certain way. 
 
@@ -171,7 +171,7 @@ This is seen here. The white part in the transmit site is sychronization happeni
 2. Keep track of remaining time
 3. Split the remaining time into sensible chunks (e.g. one per day)
 4. Allocate part of the remaining budget to this chunk
-5. Evaluate whether an event is worth processiung using the remainder of the budget allocated to the current chunk.
+5. Evaluate whether an event is worth processing using the remainder of the budget allocated to the current chunk.
 
 When something happens, we look at the budget allocated to this day (chunk). Are we ahead or behind of consumption? Is it worth processing this event? If not, then we don't -> event will be forgotten. 
 

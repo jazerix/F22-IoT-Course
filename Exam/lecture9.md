@@ -1,4 +1,7 @@
 # To infinity and beyond
+
+![](../assets/20220627212153.png)  
+
 **Everything measured is a voltage, and that is analog and not always pretty.**
 
 In a ADC, the Multiplexer allows us to choose an input channel (measure voltage on a pin)
